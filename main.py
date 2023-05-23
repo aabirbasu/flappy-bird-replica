@@ -98,7 +98,7 @@ floor_x_pos = 0
 # Load assets
 bird_downflap = pygame.image.load("bluebird.png").convert_alpha()
 bird_midflap = pygame.image.load("bluebird-midflap.png").convert_alpha()
-bird_upflap = pygame.image.load("Documents/assets/bluebird-upflap.png").convert_alpha()
+bird_upflap = pygame.image.load("bluebird-upflap.png").convert_alpha()
 
 bird_frames = [bird_downflap, bird_midflap, bird_upflap]
 bird_index = 0
@@ -108,13 +108,13 @@ bird_rect = bird_surface.get_rect(center=(50, 512 / 2))
 BIRDFLAP = pygame.USEREVENT + 1
 pygame.time.set_timer(BIRDFLAP, 200)
 
-pipe_surface = pygame.image.load("Documents/assets/pipe-green.png")
+pipe_surface = pygame.image.load("pipe-green.png")
 pipe_list = []
 SPAWNPIPE = pygame.USEREVENT
 pygame.time.set_timer(SPAWNPIPE, 1000)
 pipe_height = [200, 250, 300, 350, 400]
 
-game_over_surface = pygame.image.load("Documents/assets/message.png")
+game_over_surface = pygame.image.load("message.png")
 game_over_rect = game_over_surface.get_rect(center=(288 / 2, 512 / 2))
 
 flap_sound = pygame.mixer.Sound("sfx_wing.wav")
